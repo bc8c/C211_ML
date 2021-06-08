@@ -6,7 +6,7 @@ from sklearn.datasets import fetch_openml
 
 mnist = fetch_openml('mnist_784', version=1)
 X, y = mnist["data"], mnist["target"]
-y = y.astype(np.int)
+y = y.astype(int)
 
 print(y[64000])
 
